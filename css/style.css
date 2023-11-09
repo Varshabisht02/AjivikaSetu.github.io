@@ -35,11 +35,12 @@ p{
     right: 0;
     z-index: 1000;
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
     height: 65px;
-    padding: 0 100px;
+    padding: 0 30px;
     box-shadow: 0 2px 11px hsla(0,0%,100%,.1), 0 2px 6px rgba(51,51,51,.15);
 
 }
@@ -93,9 +94,14 @@ p{
 
 
 /*------dashboard Start-------*/
+.box{
+  display: flex;
+  flex-wrap: nowrap;
+}
 .dashboard{
   color:#0084c6 important!;
-  background-color: #019343;
+  background-color:#7ce6aa;
+  background-image: linear-gradient(315deg, #0be578 0%, #c8d6e5 74%);
 }
 h4 > li{
   color: white;
@@ -116,8 +122,8 @@ h4 > li{
 
 .counter{
   text-align: center;   
-  color: #cb4e14;
-  z-index: 2;
+  color: #ff793a;
+  z-index: 0;
   position: relative;
 }
 .counter::before{
@@ -141,7 +147,7 @@ h4 > li{
 }
 
 .counter .count{
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 1rem;    
 }
 .fact{
@@ -299,10 +305,25 @@ body {
   max-width: 10%;
 }
 
+.conatct-align{
+  
+}
 
 @media (max-width: 576px){
+  .carousel-inner{
+    padding-top: 50px;
+    background-size: cover;
+  }
   .logo{
-    max-width: 8%;
+    max-width: 11vw;
+  }
+  .mail-icon{
+    text-align: center important!;
+  }
+
+  .box{
+    display: flex;
+    flex-wrap: nowrap;
   }
 }
 
